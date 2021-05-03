@@ -21,7 +21,6 @@ function App(): React.ReactElement {
     registerFcmToken,
     registered: fcmTokenRegistered,
   } = useRegisterFcmToken();
-
   const initPushNotifications = async () => {
     const token = await requestPermissionsAndGetToken();
     if (!token) {
